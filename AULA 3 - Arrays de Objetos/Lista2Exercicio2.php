@@ -147,6 +147,7 @@ do{
             break;
 
         case 4:
+            $totalGasto = 0;
             foreach($livros as $l){
                 $totalGasto += $l->getValorPago();
             }
