@@ -1,0 +1,8 @@
+Auto close tag - Jun Han
+Auto import - steoates
+Error lens - Alexander
+Intellisense for CSS class names in html - Zingd
+Live server
+Live share
+PHP Getters & Setters (CV fork) - Christophe VERGNE
+PHP Inteliphense - Inteliphense
