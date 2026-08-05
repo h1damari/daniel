@@ -43,6 +43,9 @@ do{
                 echo $a;
             }
             break;
+        case 0:
+            echo "Saindo...";
+            break;
     } 
 } while($opcao != 0);
    
