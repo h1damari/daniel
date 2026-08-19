@@ -3,21 +3,27 @@
 require_once('modelo/Carro.php');
 require_once('modelo/Fabricante.php');
 
+$carros = array();
+
 $nome = "Volkswagen";
 $sigla = "VW";
 $volkswagen = new Fabricante($nome, $sigla);
+array_push($carros, $volkswagen);
 
 $nome = "Chevrolet";
 $sigla = "GM";
 $chevrolet = new Fabricante($nome, $sigla);
+array_push($carros, $chevrolet);
 
 $nome = "Fiat";
 $sigla = "F";
 $Fiat = new Fabricante($nome, $sigla);
+array_push($carros, $Fiat);
 
 $nome = "Renault";
 $sigla = "RN";
 $Renault = new Fabricante($nome, $sigla);
+array_push($carros, $Renault);
 
 do{
 
@@ -31,9 +37,7 @@ switch($opcao){
     case 1:
         $modelo = readline("Modelo do carro: ");
         $anoFabricacao = readline("Ano do carro: ");
-        $fabricante = readline("Fabricante: ");
-
-        
+        $fabricante = readline("Fabricante: ");  
         break;
     
     case 2:
@@ -45,10 +49,15 @@ switch($opcao){
         break;
     
     case 3:
+        foreach ($carros as $c) {
+            echo $c;
+        }
         break;
 
-    case 4:
+
+    case 0:
+        echo "\nSaindo...";
         break;
-}
+
 
 }while($opcao !=0);
