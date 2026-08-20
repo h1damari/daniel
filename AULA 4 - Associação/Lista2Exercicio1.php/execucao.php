@@ -39,7 +39,7 @@ $opcao = readline("escolha uma opção: ");
             } else{
                 echo "digita a porra de uma sigla valida\n\n";
             }
-            break;
+        break;
         
         case 2:
             $delete = readline("Qual o índice do carro a ser removido? ");
@@ -47,18 +47,18 @@ $opcao = readline("escolha uma opção: ");
                 array_splice($carros, $delete, 1);
             else 
                 echo "Índice inválido!\n\n";
-            break;
+        break;
         
         case 3:
             foreach ($carros as $c) {
                 echo $c;
             }
-            break;
+        break;
 
 
         case 0:
             echo "\nSaindo...";
-            break;
+        break;
     }
 
 }while($opcao !=0);
