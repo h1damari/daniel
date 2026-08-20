@@ -10,7 +10,7 @@ class Fabricante{
     }
 
     public function __toString() {
-        return "{$this->nome} ({$this->sigla})";
+        return "$this->nome $this->sigla";
     }
 
     /**
