@@ -9,6 +9,10 @@ class Fabricante{
         $this->nome = $nome; $this->sigla = $sigla;
     }
 
+    public function __toString() {
+        return "{$this->nome} ({$this->sigla})";
+    }
+
     /**
      * Get the value of nome
      */

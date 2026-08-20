@@ -12,6 +12,12 @@ class Carro{
         $this->modelo = $modelo; $this->anoFabricacao = $anoFabricacao; $this->fabricante = $fabricante;
     }
 
+    public function __construct($modelo, $anoFabricacao, Fabricante $fabricante) {
+        $this->modelo = $modelo;
+        $this->anoFabricacao = $anoFabricacao;
+        $this->fabricante = $fabricante;
+    }
+
     /**
      * Get the value of modelo
      */
