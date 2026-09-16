@@ -4,9 +4,11 @@
         private string $descricao;
         private int $forca;
 
-        public function getForcaTotal($forçaMago) {
-            
+        public function getForcaTotal(int $forcaMago): float
+        {
+            return $forcaMago + ($forcaMago * $this->forca / 100);
         }
+
 
         //GETs SETs
 

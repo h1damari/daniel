@@ -2,9 +2,9 @@
 
 require_once('Poder.php');
 
-    class Mago extends Poder{
+    class Mago{
         protected string $nome;
-        protected Poder $Poder;
+        protected Poder $poder;
 
         //GETs SETs
 
@@ -31,15 +31,15 @@ require_once('Poder.php');
          */
         public function getPoder(): Poder
         {
-                return $this->Poder;
+                return $this->poder;
         }
 
         /**
          * Set the value of Poder
          */
-        public function setPoder(Poder $Poder): self
+        public function setPoder(Poder $poder): self
         {
-                $this->Poder = $Poder;
+                $this->poder = $poder;
 
                 return $this;
         }

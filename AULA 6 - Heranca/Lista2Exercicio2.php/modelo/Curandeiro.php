@@ -5,8 +5,11 @@ require_once('Mago.php');
     class Curandeiro extends Mago{
         private int $forcaDeCura;
 
-        public function lancarPoder(){
-
+        public function lancarPoder(): void
+        {
+            $forcaTotal = $this->poder->getForcaTotal($this->forcaDeCura);
+ 
+            echo "O mago $this->nome, do tipo Curandeiro, possui força de $this->forcaDeCura e lançou o poder " . $this->poder->getDescricao() . " com força total de $forcaTotal.\n";
         }
 
         //GETs SETs
