@@ -8,6 +8,10 @@ abstract class Cliente{
     public abstract function GetNome();
     public abstract function getNroDoc();
     public abstract function getTipo();
+
+    public function __toString() {
+        return "\n" . "ID: " . $this->id . " | Tipo: " . $this->getTipo() . " | Nome Social: " . $this->nomeSocial . " | E-mail: " . $this->email . " | Nome: " . $this->GetNome() . " | Número documento: " . $this->getNroDoc();
+    }
     
     //GETs SETs
 

@@ -3,7 +3,7 @@
 require_once("Cliente.php");
 
 class ClientePJ extends Cliente{
-    private int $razaoSocial;
+    private  $razaoSocial;
     private string $cnpj;
 
     public function getNome(){
@@ -15,7 +15,7 @@ class ClientePJ extends Cliente{
     }
 
     public function getTipo(){
-        return "Pessoa Jurídica";
+        return "J";
     }
 
     //GETs SETs
@@ -23,7 +23,7 @@ class ClientePJ extends Cliente{
     /**
      * Get the value of razaoSocial
      */
-    public function getRazaoSocial(): int
+    public function getRazaoSocial(): string
     {
         return $this->razaoSocial;
     }
@@ -31,7 +31,7 @@ class ClientePJ extends Cliente{
     /**
      * Set the value of razaoSocial
      */
-    public function setRazaoSocial(int $razaoSocial): self
+    public function setRazaoSocial(string $razaoSocial): self
     {
         $this->razaoSocial = $razaoSocial;
 
